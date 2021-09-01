@@ -3,7 +3,7 @@ AFRAME.registerComponent("play-on-click", {
     isPlaying: { type: "boolean", default: false },
   },
   init() {
-    this.videoElt = this.elt.getAttribute("material").src;
+    this.videoElt = this.el.getAttribute("material").src;
     this.onClick = this.onClick.bind(this);
     this.play();
   },

@@ -47,21 +47,21 @@
 
   <!-- minimal loader shown until image descriptors are loaded. 
     Loading may take a while according to the device computational power -->
-  <div class="arjs-loader">
+  <!-- <div class="arjs-loader">
     <div>Loading...</div>
-  </div>
+  </div> -->
 
 
   <!-- a-frame scene -->
   <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-    arjs="trakingMethod: best; sourceType: webcam; debugUIEnabled: false">
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false">
+
+
+    <a-entity id="camera" camera position="0 0 10"></a-entity>
 
     <a-assets>
-
-      <video src="./assets/videos/Rocket_Launching_Animation.mp4" id="#rocketvid" preload="auto" loop="true" playsinline
+      <video src="./assets/videos/Rocket_Launching_Animation.mp4" id="rocketvid" preload="auto" loop="true" playsinline
         webkit-playsinline autoplay crossorigin="anonymous"></video>
-
-
     </a-assets>
 
 
